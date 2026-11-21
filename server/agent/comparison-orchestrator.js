@@ -76,7 +76,14 @@ export class ComparisonOrchestrator {
 
       let result;
       if (comparison.mode === 'live') {
-        const live = await fetchLiveMarket(subject);
+        let live;
+        try {
+          live = await fetchLiveMarket(subject);
+        } catch (error) {
+          throw new Error(
+            `Live market request failed: ${error.message}. Check network access or switch to Demo market.`
+          );
+        }
         result = prepareComparison({
           subject,
           sources: live.sources,

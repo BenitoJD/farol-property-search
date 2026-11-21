@@ -100,7 +100,8 @@ function failedView(comparison) {
     <div class="error-panel">
       <span class="error-icon">${icon('alert', 26)}</span>
       <p class="kicker">Analysis failed</p>
-      <h1>${escapeHtml(comparison.error || 'The comparable search did not finish.')}</h1>
+      <h1>Analysis failed</h1>
+      <p class="muted">${escapeHtml(comparison.error || 'The comparable search did not finish.')}</p>
       <p class="muted">You can run this analysis again; the listing is saved.</p>
       <div class="button-row">
         <button class="button button-primary" type="button" id="retry-comparison">${icon('refresh', 15)} Retry analysis</button>

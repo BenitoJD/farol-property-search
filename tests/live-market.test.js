@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseImovirtualSearchHtml, searchUrlForSubject } from '../server/agent/live-market.js';
+import { mapLiveListing, parseImovirtualSearchHtml, searchUrlForSubject } from '../server/agent/live-market.js';
 
 test('builds the live market search URL from the subject', () => {
   assert.equal(
@@ -47,4 +47,33 @@ test('rejects a live page without the structured payload', () => {
     () => parseImovirtualSearchHtml('<script id="__NEXT_DATA__">not json</script>'),
     /malformed/i
   );
+});
+
+test('maps all live transaction codes and sale metadata', () => {
+  const item = {
+    id: 99,
+    title: 'Casa / Villa T4 em Lagos',
+    slug: 'casa-villa-t4-ID99',
+    estate: 'HOUSE',
+    transaction: 'SELL',
+    totalPrice: { value: 850000, currency: 'EUR' },
+    areaInSquareMeters: 210,
+    roomsNumber: 'FOUR',
+    createdAtFirst: new Date().toISOString(),
+    location: { reverseGeocoding: { locations: [
+      { locationLevel: 'district', name: 'Faro' },
+      { locationLevel: 'council', name: 'Lagos' },
+      { locationLevel: 'parish', name: 'São Gonçalo de Lagos' },
+    ] } },
+    agency: { id: 5, name: 'Test Agency', type: 'AGENCY' },
+  };
+  const subject = { city: 'Lagos', transaction: 'sale', type: 'villa' };
+  const mapped = mapLiveListing(item, subject);
+  assert.equal(mapped.transaction, 'sale');
+  assert.equal(mapped.type, 'villa');
+  assert.equal(mapped.price, 850000);
+  assert.equal(mapped.areaM2, 210);
+  assert.equal(mapped.bedrooms, 4);
+  assert.equal(mapped.sourceDomain, 'imovirtual.com');
+  assert.match(mapped.url, /imovirtual\.com\/pt\/anuncio/);
 });

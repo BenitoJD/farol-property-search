@@ -11,7 +11,7 @@ import { cityKey } from '../domain/pricing.js';
  * Operators must confirm that their use of a source complies with its terms.
  */
 
-const BASE = 'https://www.imovirtual.com';
+const BASE = (process.env.FAROL_LIVE_BASE_URL || 'https://www.imovirtual.com').replace(/\/$/, '');
 const USER_AGENT =
   'FarolComparableAgent/1.0 (+https://propertybuyorrent.com; listing comparison; contact the operator)';
 const CACHE_TTL_MS = 8 * 60 * 1000;
@@ -153,7 +153,7 @@ export function parseImovirtualSearchHtml(html) {
   return items;
 }
 
-function toListing(item, subject) {
+export function mapLiveListing(item, subject) {
   const price = parsePrice(item);
   if (!price) return null;
   if (isShortLet(item)) return null;
@@ -182,7 +182,7 @@ function toListing(item, subject) {
     reliability: 0.7,
     reference: String(item.id || slug),
     title: text(item.title) || 'Untitled live listing',
-    transaction: String(item.transaction).toUpperCase() === 'SALE' ? 'sale' : 'rent',
+    transaction: ['SALE', 'SELL', 'BUY'].includes(String(item.transaction).toUpperCase()) ? 'sale' : 'rent',
     type,
     city,
     cityKey: cityKey(city),
@@ -248,7 +248,7 @@ export async function fetchLiveMarket(subject, { signal } = {}) {
 
   const extracted = items
     .slice(0, MAX_ITEMS)
-    .map((item) => toListing(item, subject))
+    .map((item) => mapLiveListing(item, subject))
     .filter(Boolean);
   if (!extracted.length) {
     throw new Error('The live source returned no usable comparable listings for this market.');

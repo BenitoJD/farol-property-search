@@ -398,13 +398,13 @@ The demo provider in `server/seed/market.js` is the reference shape.
 npm test
 ```
 
-**61 tests** cover:
+**63 tests** cover:
 
 - listing-first comparables: similar-listing matching, self-mirror exclusion, competitor grouping, value ranges and thin-evidence handling;
 - price statistics and portfolio benchmarks;
 - enquiry interpretation and case lifecycle;
 - comparisons API, SSE completion, exports, validation and reset;
-- live Imovirtual URL/HTML parsing and malformed payload handling;
+- live Imovirtual URL/HTML parsing, transaction-code mapping and malformed payload handling;
 - source/inventory CRUD, CSV import, security headers, rate limiting and optional Basic auth.
 
 ---
