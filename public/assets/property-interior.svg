@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="isky" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE4D0"/>
+      <stop offset="1" stop-color="#E3D0B4"/>
+    </linearGradient>
+    <linearGradient id="isea" x1="0" y1="120" x2="0" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8CFC4"/>
+      <stop offset="1" stop-color="#8FAF9F"/>
+    </linearGradient>
+    <linearGradient id="iroom" x1="0" y1="220" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E8D5"/>
+      <stop offset="1" stop-color="#E4D3B9"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="640" height="400" fill="url(#isky)"/>
+
+    <!-- arch window to sea -->
+    <path d="M208 100h220v240H208Z" fill="url(#isea)"/>
+    <path d="M208 100c0-38 30-64 64-64h92c34 0 64 26 64 64v240H208Z" fill="url(#isea)"/>
+    <path d="M208 100h220M318 36v304" stroke="#F7EFE1" stroke-width="10"/>
+    <path d="M208 100h220" stroke="#F7EFE1" stroke-width="10"/>
+    <path d="M208 340h220" stroke="#E7D8C0" stroke-width="12"/>
+
+    <path d="M238 166h160v10H238Z" fill="#D9C4A2" opacity=".45"/>
+    <path d="M238 186h160v2H238Z" fill="#D9C4A2" opacity=".35"/>
+    <circle cx="382" cy="88" r="25" fill="#D79A5C" opacity=".8"/>
+    <path d="M228 202h180v98H228Z" fill="#A6C0B3" opacity=".55"/>
+    <path d="M236 214h44M300 224h54M376 210h24" stroke="#DCE8E1" stroke-width="2" opacity=".7"/>
+
+    <!-- room -->
+    <path d="M0 400V236h640v164Z" fill="url(#iroom)"/>
+    <path d="M0 236h640" stroke="#C9B594" stroke-width="3"/>
+
+    <!-- left wall -->
+    <path d="M0 400V88h208v312Z" fill="#F7EEDF"/>
+    <path d="M0 88h208v12H0Z" fill="#E4D2B6"/>
+    <rect x="38" y="152" width="82" height="64" fill="#E9DAC2"/>
+    <rect x="44" y="158" width="70" height="52" fill="#C7D8CB"/>
+    <path d="M79 158v52M44 184h70" stroke="#F7EEDF" stroke-width="3"/>
+    <path d="M34 150h90v6h-90Z" fill="#C4623C"/>
+
+    <!-- sofa -->
+    <g>
+      <path d="M26 356V294c0-13 10-23 23-23h94c13 0 23 10 23 23v62Z" fill="#D6C3A7"/>
+      <path d="M36 300h120v38H36Z" fill="#E8D8C0"/>
+      <path d="M40 338h112v10H40Z" fill="#C9B393"/>
+      <path d="M46 300v38M146 300v38" stroke="#CBB69A" stroke-width="2"/>
+      <path d="M28 356v10M170 356v10" stroke="#8C6B4A" stroke-width="4"/>
+      <path d="M54 300c0-15 12-25 26-25s26 10 26 25Z" fill="#B2633F"/>
+      <path d="M116 300c0-15 12-25 26-25s26 10 26 25Z" fill="#C4623C"/>
+    </g>
+
+    <!-- table and lamp -->
+    <g>
+      <path d="M220 388h150v12H220Z" fill="#8C6B4A"/>
+      <path d="M242 388v-38M348 388v-38" stroke="#8C6B4A" stroke-width="4"/>
+      <path d="M304 344v-26" stroke="#6E5B40" stroke-width="3"/>
+      <path d="M286 318h36l-6-16h-24Z" fill="#F0DFC5"/>
+      <path d="M286 318h36" stroke="#C4623C" stroke-width="2"/>
+      <path d="M256 350h78v8h-78Z" fill="#F3E7D4"/>
+      <path d="M262 350v-10h64v10" fill="#E9D8BE"/>
+    </g>
+
+    <!-- floor plant -->
+    <g>
+      <path d="M556 400v-72c0-16 12-28 28-28s28 12 28 28v72Z" fill="#B2633F"/>
+      <path d="M584 306c-30-18-38-46-28-66 14 22 28 32 46 36-4 14-10 22-18 30Z" fill="#4C6B59"/>
+      <path d="M584 306c28-22 50-20 62-6-20 14-40 20-56 24Z" fill="#587765"/>
+      <path d="M584 286c-18-10-26-26-24-42 14 8 24 16 34 18Z" fill="#6D8568"/>
+    </g>
+
+    <!-- rug -->
+    <path d="M160 400c22-34 86-44 160-44 82 0 146 12 172 44Z" fill="#E0CFB4"/>
+    <path d="M196 400c26-20 74-28 124-28 56 0 104 8 128 28" stroke="#D2BD9C" stroke-width="2" fill="none"/>
+
+    <!-- light -->
+    <path d="M318 36 250 0h136Z" fill="#F8E8C8" opacity=".28"/>
+  </g>
+</svg>

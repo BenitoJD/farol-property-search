@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="vsky" x1="320" y1="0" x2="320" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2EADB"/>
+      <stop offset="1" stop-color="#E4D6BE"/>
+    </linearGradient>
+    <linearGradient id="vpool" x1="300" y1="300" x2="420" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9CFC3"/>
+      <stop offset="1" stop-color="#8FB2A3"/>
+    </linearGradient>
+    <clipPath id="vframe"><rect width="640" height="400" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#vframe)">
+    <rect width="640" height="400" fill="url(#vsky)"/>
+
+    <!-- sun -->
+    <circle cx="526" cy="86" r="46" fill="#D79A5C" opacity=".9"/>
+    <circle cx="526" cy="86" r="62" fill="none" stroke="#D79A5C" stroke-opacity=".28"/>
+
+    <!-- hills -->
+    <path d="M0 232c62-34 118-52 178-50 64 2 98 28 154 30 70 2 112-38 178-34 58 4 96 26 130 44v178H0Z" fill="#CBD4C2"/>
+    <path d="M0 262c80-20 136-20 200-2 78 22 130 16 202-8 74-24 152-18 238 10v138H0Z" fill="#D8D2BE"/>
+
+    <!-- plot -->
+    <path d="M0 300c92-16 176-18 276-6 122 14 224 12 364-10v116H0Z" fill="#DCCFB6"/>
+    <path d="M0 330c112-10 204-6 302 6 118 14 222 10 338-8" stroke="#C6B79C" stroke-width="1.4" fill="none"/>
+
+    <!-- house shadow -->
+    <ellipse cx="350" cy="312" rx="194" ry="20" fill="#B7A689" opacity=".35"/>
+
+    <!-- main volume -->
+    <path d="M214 302V196l124-46 132 42v110Z" fill="#F7F0E4"/>
+    <path d="M338 150v152h132V192Z" fill="#EADFCD"/>
+    <path d="M214 196l124-46 132 42" fill="none" stroke="#2F493D" stroke-width="2"/>
+    <path d="M206 302h322" stroke="#2F493D" stroke-width="2"/>
+    <path d="M206 196h274" stroke="#2F493D" stroke-width="1.4" opacity=".5"/>
+
+    <!-- roof overhang -->
+    <path d="M198 196h290l-18-12H212Z" fill="#3B584A"/>
+    <path d="M338 138v-12" stroke="#2F493D" stroke-width="1.6"/>
+    <circle cx="338" cy="122" r="4" fill="#C4623C"/>
+
+    <!-- windows -->
+    <rect x="242" y="220" width="52" height="60" fill="#355044"/>
+    <rect x="247" y="225" width="42" height="50" fill="#AFC9BA"/>
+    <path d="M268 225v50M247 250h42" stroke="#355044" stroke-width="2"/>
+    <rect x="358" y="218" width="84" height="56" fill="#355044"/>
+    <rect x="363" y="223" width="74" height="46" fill="#B7CFC1"/>
+    <path d="M400 223v46M363 246h74" stroke="#355044" stroke-width="2"/>
+
+    <!-- door -->
+    <rect x="300" y="246" width="40" height="56" fill="#B2633F"/>
+    <path d="M300 254h40M320 246v56" stroke="#8F4A2E" stroke-width="1.5"/>
+    <circle cx="333" cy="275" r="2.4" fill="#F1E7D4"/>
+
+    <!-- pergola -->
+    <g stroke="#3B584A" stroke-width="2">
+      <path d="M448 302v-86M494 302v-86M448 224h46M448 246h46M448 268h46"/>
+    </g>
+    <path d="M440 218h62" stroke="#3B584A" stroke-width="3"/>
+
+    <!-- terrace -->
+    <path d="M214 302h262v14H214Z" fill="#CDBB9D"/>
+    <path d="M230 316v12M266 316v12M302 316v12M338 316v12M374 316v12M410 316v12M446 316v12" stroke="#B5A184" stroke-width="2"/>
+
+    <!-- pool -->
+    <path d="M330 342c0-12 14-22 42-22h112c28 0 42 10 42 22v20c0 12-14 20-42 20H372c-28 0-42-8-42-20Z" fill="url(#vpool)"/>
+    <path d="M338 350c32-8 62-8 94 0 34 8 64 8 96 0M354 364c24-6 48-6 72 0 26 6 50 6 76 0" stroke="#EAF2EA" stroke-width="1.6" fill="none" opacity=".8"/>
+    <path d="M364 384v8M486 384v8" stroke="#2F493D" stroke-width="3"/>
+
+    <!-- sun loungers -->
+    <g fill="#C4623C">
+      <path d="M270 352h44l8 18h-52Z"/>
+      <path d="M274 370h44" stroke="#2F493D" stroke-width="2"/>
+      <path d="M278 372v14M314 372v14" stroke="#2F493D" stroke-width="2"/>
+    </g>
+    <g fill="#C4623C" opacity=".8">
+      <path d="M232 366h32l6 13h-38Z"/>
+      <path d="M236 379h30" stroke="#2F493D" stroke-width="2"/>
+      <path d="M239 381v10M263 381v10" stroke="#2F493D" stroke-width="2"/>
+    </g>
+
+    <!-- palm -->
+    <g>
+      <path d="M124 338c-4-62 2-104 18-150" stroke="#7A5C3E" stroke-width="6" fill="none"/>
+      <path d="M142 188c-26-30-52-36-74-30 24 16 42 30 58 48" fill="#4C6B59"/>
+      <path d="M142 188c-8-36-2-58 16-78 6 28 6 54 2 84" fill="#587765"/>
+      <path d="M142 188c28-26 56-32 78-22-22 18-42 30-64 38" fill="#4C6B59"/>
+      <path d="M142 188c22 4 42 18 54 42-24-6-44-18-60-34" fill="#587765"/>
+      <path d="M142 188c-26 4-46 20-58 46 26-8 46-20 62-38" fill="#587765"/>
+      <circle cx="144" cy="196" r="5" fill="#8A6A46"/>
+    </g>
+
+    <!-- pots -->
+    <g>
+      <path d="M82 330h32l-5 34H87Z" fill="#B2633F"/>
+      <path d="M98 330c-16-14-14-30-2-40 4 14 12 20 24 22-8 8-14 12-24 18Z" fill="#5A7864"/>
+      <path d="M548 330h26l-4 30h-18Z" fill="#B2633F"/>
+      <path d="M560 330c-12-12-10-24 0-32 2 10 8 16 18 18-6 6-12 10-18 14Z" fill="#5A7864"/>
+    </g>
+
+    <!-- birds -->
+    <path d="M382 92c8-8 14-8 22 0M414 80c7-7 13-7 20 0" stroke="#5B6F62" stroke-width="1.6" fill="none"/>
+  </g>
+</svg>

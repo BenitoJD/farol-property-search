@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="psky" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE5D2"/>
+      <stop offset="1" stop-color="#E2D0B3"/>
+    </linearGradient>
+    <linearGradient id="psea" x1="0" y1="196" x2="0" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AFC6BA"/>
+      <stop offset="1" stop-color="#8DAC9D"/>
+    </linearGradient>
+    <linearGradient id="ppool" x1="0" y1="286" x2="0" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9C9C2"/>
+      <stop offset="1" stop-color="#7DA79D"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="640" height="400" fill="url(#psky)"/>
+    <circle cx="122" cy="84" r="34" fill="#D79A5C" opacity=".85"/>
+    <circle cx="122" cy="84" r="49" fill="none" stroke="#D79A5C" stroke-opacity=".22"/>
+
+    <path d="M0 214h640v58H0Z" fill="url(#psea)"/>
+    <path d="M0 214h640" stroke="#7F9C8D" stroke-width="2"/>
+    <path d="M24 238h58M104 250h44M186 232h62M282 246h54M372 236h68M470 252h48M552 230h56" stroke="#D6E2DA" stroke-width="2" opacity=".8"/>
+
+    <!-- apartment building -->
+    <g>
+      <path d="M330 300V118h236v182Z" fill="#F7EFE1"/>
+      <path d="M320 118h256v18H320Z" fill="#B2633F"/>
+      <path d="M320 118h256" stroke="#8F4A2E" stroke-width="3"/>
+      <path d="M352 136h68v74h-68Z" fill="#355044"/>
+      <path d="M358 142h56v62h-56Z" fill="#BED2C5"/>
+      <path d="M386 142v62M358 173h56" stroke="#355044" stroke-width="2"/>
+      <path d="M446 136h68v74h-68Z" fill="#355044"/>
+      <path d="M452 142h56v62h-56Z" fill="#BED2C5"/>
+      <path d="M480 142v62M452 173h56" stroke="#355044" stroke-width="2"/>
+      <path d="M346 136h74v6h-74ZM440 136h74v6h-74Z" fill="#C4623C"/>
+
+      <path d="M352 236h70v64h-70Z" fill="#355044"/>
+      <path d="M358 242h58v52h-58Z" fill="#BED2C5"/>
+      <path d="M387 242v52M358 268h58" stroke="#355044" stroke-width="2"/>
+      <path d="M446 236h70v64h-70Z" fill="#355044"/>
+      <path d="M452 242h58v52h-58Z" fill="#BED2C5"/>
+      <path d="M481 242v52M452 268h58" stroke="#355044" stroke-width="2"/>
+      <path d="M346 236h76v6h-76ZM440 236h76v6h-76Z" fill="#C4623C"/>
+
+      <path d="M338 190h220v5H338Z" fill="#8C6B4A"/>
+      <path d="M350 195v11M374 195v11M398 195v11M422 195v11M446 195v11M470 195v11M494 195v11M518 195v11M542 195v11" stroke="#8C6B4A" stroke-width="2"/>
+    </g>
+
+    <!-- palm -->
+    <g>
+      <path d="M596 318v-96" stroke="#6E5B40" stroke-width="6"/>
+      <path d="M596 246c-30-20-58-20-74-4 22 2 42 10 60 24-2-8-2-14-2-20Z" fill="#5C7863"/>
+      <path d="M596 246c30-22 58-22 74-6-22 2-42 10-60 24 2-8 2-14 2-20Z" fill="#6D8568"/>
+      <path d="M596 236c-14-22-12-42 2-52 2 20 6 34 14 46-6 4-10 6-16 6Z" fill="#7C9274"/>
+      <path d="M596 246c-4-22 2-38 18-46-2 20-6 34-12 48Z" fill="#587765"/>
+    </g>
+
+    <!-- pool deck -->
+    <path d="M0 296h640v104H0Z" fill="#DCCDB4"/>
+    <path d="M0 296h640" stroke="#C8B596" stroke-width="3"/>
+    <path d="M44 322h420v58H44Z" fill="url(#ppool)" rx="6"/>
+    <path d="M44 322h420" stroke="#EAE1D0" stroke-width="5"/>
+    <path d="M70 344h70M164 360h92M282 338h64M366 356h58" stroke="#D8E6DF" stroke-width="2.5" opacity=".8"/>
+
+    <!-- loungers -->
+    <g>
+      <path d="M70 312h64l-6 8H76Z" fill="#F1E5D0"/>
+      <path d="M76 320v8M128 320v8M90 320l-6 8M116 320l6 8" stroke="#8C6B4A" stroke-width="2"/>
+      <path d="M150 312h64l-6 8h-52Z" fill="#E9DCC4"/>
+      <path d="M156 320v8M208 320v8" stroke="#8C6B4A" stroke-width="2"/>
+    </g>
+
+    <!-- foreground plants -->
+    <path d="M0 400v-31c14-10 32-10 46 0 10-6 22-4 30 4v27Z" fill="#5C7863"/>
+    <path d="M588 400v-28c12-8 26-8 38 0v28Z" fill="#4C6B59"/>
+
+    <path d="M58 124c7-7 13-7 20 0M84 114c6-6 11-6 17 0" stroke="#5B6F62" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>

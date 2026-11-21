@@ -1,0 +1,10 @@
+node_modules/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+archive/scout/data/*.db
+archive/scout/data/*.db-wal
+archive/scout/data/*.db-shm
+.env
+.DS_Store
+screenshots/*.png

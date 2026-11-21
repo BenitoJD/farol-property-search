@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="ssky" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0E6D4"/>
+      <stop offset="1" stop-color="#E2D1B6"/>
+    </linearGradient>
+    <linearGradient id="ssea" x1="0" y1="170" x2="0" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AEC6BB"/>
+      <stop offset="1" stop-color="#86A99A"/>
+    </linearGradient>
+    <linearGradient id="ssand" x1="0" y1="286" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCC9A9"/>
+      <stop offset="1" stop-color="#CDB693"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="640" height="400" fill="url(#ssky)"/>
+    <circle cx="512" cy="82" r="40" fill="#D79A5C" opacity=".85"/>
+    <circle cx="512" cy="82" r="56" fill="none" stroke="#D79A5C" stroke-opacity=".2"/>
+
+    <path d="M0 184h640v100H0Z" fill="url(#ssea)"/>
+    <path d="M0 184h640" stroke="#7F9C8D" stroke-width="2"/>
+    <path d="M40 210h80M158 228h54M250 204h92M380 224h70M484 208h80M586 230h40" stroke="#D7E3DA" stroke-width="2.5" opacity=".8"/>
+
+    <!-- white beachfront building -->
+    <g>
+      <path d="M92 318V116h300v202Z" fill="#F8F0E2"/>
+      <path d="M84 116h316v18H84Z" fill="#B2633F"/>
+      <path d="M84 116h316" stroke="#8F4A2E" stroke-width="3"/>
+
+      <g fill="#355044">
+        <rect x="122" y="154" width="54" height="54" rx="2"/>
+        <rect x="198" y="154" width="54" height="54" rx="2"/>
+        <rect x="274" y="154" width="54" height="54" rx="2"/>
+        <rect x="122" y="250" width="54" height="54" rx="2"/>
+        <rect x="198" y="250" width="54" height="54" rx="2"/>
+        <rect x="274" y="250" width="54" height="54" rx="2"/>
+      </g>
+      <g fill="#C1D5C8">
+        <rect x="127" y="159" width="44" height="44"/>
+        <rect x="203" y="159" width="44" height="44"/>
+        <rect x="279" y="159" width="44" height="44"/>
+        <rect x="127" y="255" width="44" height="44"/>
+        <rect x="203" y="255" width="44" height="44"/>
+        <rect x="279" y="255" width="44" height="44"/>
+      </g>
+      <g stroke="#355044" stroke-width="1.6">
+        <path d="M149 159v44M127 181h44M225 159v44M203 181h44M301 159v44M279 181h44"/>
+        <path d="M149 255v44M127 277h44M225 255v44M203 277h44M301 255v44M279 277h44"/>
+      </g>
+
+      <path d="M94 226h296v5H94ZM94 226" fill="#8C6B4A"/>
+      <g stroke="#8C6B4A" stroke-width="2">
+        <path d="M104 231v10M128 231v10M152 231v10M176 231v10M200 231v10M224 231v10M248 231v10M272 231v10M296 231v10M320 231v10M344 231v10M368 231v10"/>
+      </g>
+      <path d="M104 148h52M180 148h52M256 148h52M104 244h52M180 244h52M256 244h52" stroke="#C4623C" stroke-width="5"/>
+
+      <path d="M366 318V206h42v112Z" fill="#E8DBC6"/>
+      <path d="M360 206h54v10h-54Z" fill="#B2633F"/>
+    </g>
+
+    <!-- beach -->
+    <path d="M0 290c90-18 180-20 270-6 90 14 180 14 270-2 44-8 78-8 100-2v120H0Z" fill="url(#ssand)"/>
+    <path d="M0 314c100-20 200-20 300-2 100 18 200 18 340-6" stroke="#C2AA85" stroke-width="2" fill="none" opacity=".7"/>
+
+    <!-- parasols and chairs -->
+    <g>
+      <path d="M448 302v50" stroke="#6E5B40" stroke-width="3"/>
+      <path d="M448 304c-30-2-48-12-54-30 22-4 42 4 54 20Z" fill="#C4623C"/>
+      <path d="M448 304c30-4 46-16 50-34-22-2-40 8-50 24Z" fill="#D9A36F"/>
+      <path d="M510 330h44l-4 7h-36Z" fill="#F4E6D0"/>
+      <path d="M514 337v7M548 337v7" stroke="#8C6B4A" stroke-width="2"/>
+    </g>
+
+    <!-- foreground plant -->
+    <path d="M0 400v-38c0-14 10-22 22-22s22 8 22 22v38Z" fill="#B2633F"/>
+    <path d="M22 344c-20-12-24-30-16-44 8 14 18 22 30 24-2 8-8 14-14 20Z" fill="#4C6B59"/>
+    <path d="M22 344c18-16 32-16 42-6-14 10-26 14-38 16Z" fill="#587765"/>
+
+    <path d="M70 112c7-7 13-7 20 0M96 102c6-6 11-6 17 0" stroke="#5B6F62" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>

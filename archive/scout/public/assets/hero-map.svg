@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <defs>
+    <linearGradient id="water" x1="0" y1="400" x2="900" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D5DED4"/>
+      <stop offset="1" stop-color="#C5D3C8"/>
+    </linearGradient>
+    <linearGradient id="land" x1="450" y1="40" x2="450" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EDE4D1"/>
+      <stop offset="1" stop-color="#E5DAC4"/>
+    </linearGradient>
+    <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
+      <path d="M45 0H0V45" stroke="#B9AB92" stroke-opacity=".22" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="620" fill="url(#land)"/>
+  <rect width="900" height="620" fill="url(#grid)"/>
+
+  <!-- contour lines -->
+  <g stroke="#B9A98D" stroke-opacity=".55" stroke-width="1.1">
+    <path d="M80 100c80-38 150-30 220 4s155 46 244 20 160-8 226 26" />
+    <path d="M46 142c86-36 158-22 230 12s162 40 250 12 170-18 252 20" />
+    <path d="M18 186c92-30 168-12 240 22s158 34 244 4 180-26 264 10" />
+    <path d="M0 232c110-26 190-2 258 28s142 24 222-4 184-26 270 8 150 22 150 22" />
+    <path d="M40 280c100-22 168 4 238 26s158 24 230-6 170-24 248 8" />
+    <path d="M108 326c82-18 152 8 220 22s152 18 220-8 152-18 222 8" />
+    <path d="M224 368c62-12 118 6 176 16s132 10 184-8" />
+  </g>
+
+  <!-- water -->
+  <path d="M0 430c88-8 142 20 214 18 82-2 118-26 202-22 96 4 140 30 226 22 92-8 158-22 258-10V620H0Z" fill="url(#water)"/>
+  <path d="M0 430c88-8 142 20 214 18 82-2 118-26 202-22 96 4 140 30 226 22 92-8 158-22 258-10" stroke="#5E7768" stroke-width="1.6"/>
+  <g stroke="#AFC3B4" stroke-width="1.1" stroke-opacity=".8">
+    <path d="M40 472c34-8 62-8 96 0s66 8 100 0"/>
+    <path d="M180 512c40-10 76-10 116 0s76 10 118 0"/>
+    <path d="M380 474c44-10 82-10 126 0s82 10 124 0"/>
+    <path d="M520 546c48-10 90-10 138 0s92 10 142 0"/>
+    <path d="M656 492c34-8 64-8 98 0s66 8 100 0"/>
+    <path d="M70 566c34-8 66-8 100 0s66 8 100 0"/>
+  </g>
+
+  <!-- roads -->
+  <g stroke="#A49275" stroke-width="1.5" stroke-dasharray="5 6" stroke-opacity=".7">
+    <path d="M106 414c86-38 172-54 268-46s188 34 306 22"/>
+    <path d="M300 402c-2-82 14-148 64-224"/>
+    <path d="M562 404c24-74 58-128 116-188"/>
+  </g>
+
+  <!-- place labels -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2.4" fill="#3A4B40">
+    <text x="96" y="404">LAGOS</text>
+    <text x="296" y="388">PORTIMÃO</text>
+    <text x="492" y="382">ALBUFEIRA</text>
+    <text x="708" y="398">TAVIRA</text>
+  </g>
+
+  <!-- pins -->
+  <g>
+    <g transform="translate(176 416)">
+      <circle r="18" fill="#C4623C" fill-opacity=".16"/>
+      <circle r="6.5" fill="#C4623C"/>
+      <circle r="2.2" fill="#F4ECDD"/>
+    </g>
+    <g transform="translate(364 398)">
+      <circle r="18" fill="#C4623C" fill-opacity=".16"/>
+      <circle r="6.5" fill="#C4623C"/>
+      <circle r="2.2" fill="#F4ECDD"/>
+    </g>
+    <g transform="translate(556 394)">
+      <circle r="18" fill="#C4623C" fill-opacity=".16"/>
+      <circle r="6.5" fill="#C4623C"/>
+      <circle r="2.2" fill="#F4ECDD"/>
+    </g>
+    <g transform="translate(764 408)">
+      <circle r="18" fill="#C4623C" fill-opacity=".16"/>
+      <circle r="6.5" fill="#C4623C"/>
+      <circle r="2.2" fill="#F4ECDD"/>
+    </g>
+  </g>
+
+  <!-- compass -->
+  <g transform="translate(778 142)">
+    <circle r="46" fill="#F2EADA" fill-opacity=".7" stroke="#3A4B40" stroke-opacity=".35"/>
+    <circle r="35" stroke="#3A4B40" stroke-opacity=".22"/>
+    <path d="M0-27 7 0 0 27-7 0Z" fill="#3A4B40"/>
+    <path d="M0-27 7 0H-7Z" fill="#C4623C"/>
+    <text x="-4" y="-54" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="#3A4B40">N</text>
+  </g>
+
+  <!-- scale -->
+  <g transform="translate(96 560)" stroke="#3A4B40" stroke-opacity=".65">
+    <path d="M0 0h92M0-5v10M46-3v6M92-5v10" />
+    <text x="0" y="24" font-family="ui-monospace, Menlo, monospace" font-size="9" letter-spacing="2" fill="#3A4B40" stroke="none">20 KM</text>
+  </g>
+
+  <!-- coordinates -->
+  <text x="720" y="586" font-family="ui-monospace, Menlo, monospace" font-size="9" letter-spacing="1.5" fill="#3A4B40" fill-opacity=".65">37°06′N 8°32′W</text>
+</svg>

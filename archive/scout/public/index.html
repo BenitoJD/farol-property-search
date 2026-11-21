@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#122b23" />
+    <meta
+      name="description"
+      content="Scout is a price-intelligence agent for Property Buy or Rent. It reads a client brief, searches property sources, removes duplicates and benchmarks the portfolio against the market."
+    />
+    <title>Scout — price intelligence for Property Buy or Rent</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app">
+      <aside class="sidebar" id="sidebar" aria-label="Scout navigation">
+        <a class="brand" href="#/scout">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="38" height="38">
+              <circle cx="24" cy="24" r="22.25" fill="none" stroke="currentColor" stroke-opacity=".28" />
+              <path d="M24 5.5 28.1 19.9 42.5 24 28.1 28.1 24 42.5 19.9 28.1 5.5 24 19.9 19.9Z" fill="#f0e7d5" />
+              <circle cx="24" cy="24" r="2.6" fill="#c4623c" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Scout</span>
+            <span class="brand-sub">Property intelligence</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-item" href="#/scout" data-nav="scout">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4" /><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1Z" /></svg>
+            </span>
+            <span>Scout</span>
+            <span class="nav-hint">New search</span>
+          </a>
+          <a class="nav-item" href="#/portfolio" data-nav="portfolio">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20V9.5L12 4l8 5.5V20" /><path d="M9 20v-6h6v6" /><path d="M4 20h16" /></svg>
+            </span>
+            <span>Portfolio</span>
+            <span class="nav-hint" id="nav-property-count"></span>
+          </a>
+          <a class="nav-item" href="#/sources" data-nav="sources">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3" /><path d="M12 3.2v3M12 17.8v3M3.2 12h3M17.8 12h3M5.8 5.8l2.1 2.1M16.1 16.1l2.1 2.1M18.2 5.8l-2.1 2.1M7.9 16.1l-2.1 2.1" /></svg>
+            </span>
+            <span>Sources</span>
+            <span class="nav-hint" id="nav-source-count"></span>
+          </a>
+          <a class="nav-item" href="#/runs" data-nav="runs">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 4.5h14v15H5z" /><path d="M8.5 8.5H15M8.5 12H15M8.5 15.5h4" /></svg>
+            </span>
+            <span>Run history</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-about">
+          <span class="micro-label">Built for</span>
+          <p>Property Buy or Rent</p>
+          <span class="sidebar-regions">Algarve · Lisbon · Andalusia</span>
+        </div>
+
+        <div class="sidebar-foot">
+          <div class="mode-pill" id="mode-pill">
+            <span class="mode-dot" aria-hidden="true"></span>
+            <span id="mode-label">Simulation</span>
+          </div>
+          <button class="text-button sidebar-reset" id="reset-demo" type="button">Reset demo data</button>
+          <p class="sidebar-fineprint">Scout 1.0 · internal preview</p>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            </button>
+            <nav class="breadcrumb" aria-label="Breadcrumb" id="breadcrumb">
+              <span>Workspace</span><span class="crumb-sep">/</span><strong>Scout</strong>
+            </nav>
+          </div>
+          <div class="topbar-right">
+            <span class="topbar-date" id="topbar-date"></span>
+            <button class="button button-sm button-quiet" id="new-brief-button" type="button">
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+              New brief
+            </button>
+          </div>
+        </header>
+
+        <main id="main" tabindex="-1">
+          <div class="initial-loader" aria-label="Loading Scout">
+            <span class="loader-star" aria-hidden="true"></span>
+            <p>Preparing the workspace…</p>
+          </div>
+        </main>
+
+        <footer class="app-footer">
+          <span>Scout 1.0 · price intelligence for Property Buy or Rent</span>
+          <span class="footer-dot" aria-hidden="true"></span>
+          <span id="footer-mode">Simulated market data</span>
+          <button class="text-button" type="button" data-open-method>Method &amp; limits</button>
+        </footer>
+      </div>
+    </div>
+
+    <div class="scrim" id="scrim" hidden></div>
+    <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="drawer-title"></aside>
+    <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="false"></div>
+    <div class="route-progress" id="route-progress" hidden></div>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

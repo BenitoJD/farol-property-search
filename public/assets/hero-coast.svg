@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9DDC8"/>
+      <stop offset="0.55" stop-color="#E2CFB2"/>
+      <stop offset="1" stop-color="#D6BE9C"/>
+    </linearGradient>
+    <linearGradient id="hsea" x1="0" y1="300" x2="0" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9C1B4"/>
+      <stop offset="1" stop-color="#7FA193"/>
+    </linearGradient>
+    <linearGradient id="hland" x1="0" y1="330" x2="0" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CDB896"/>
+      <stop offset="1" stop-color="#BCA581"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="1440" height="520" fill="url(#hsky)"/>
+    <circle cx="1090" cy="150" r="74" fill="#D79A5C" opacity=".9"/>
+    <circle cx="1090" cy="150" r="102" fill="none" stroke="#D79A5C" stroke-opacity=".2"/>
+
+    <path d="M0 318h1440v202H0Z" fill="url(#hsea)"/>
+    <path d="M0 318h1440" stroke="#8FA99B" stroke-width="2"/>
+    <path d="M120 348h96M300 372h64M520 340h112M760 362h84M980 344h128M1210 370h90M1340 336h64" stroke="#D5E2DA" stroke-width="2.5" opacity=".7"/>
+
+    <!-- far coast -->
+    <path d="M0 318c100-50 206-64 320-46 108 18 178 40 264 46H0Z" fill="#C8B594" opacity=".75"/>
+    <path d="M850 318c90-40 190-52 310-34 104 16 180 30 280 34H850Z" fill="#C8B594" opacity=".65"/>
+
+    <!-- left headland -->
+    <path d="M0 380c74-58 168-86 260-74 76 10 138 42 204 96 46 38 88 62 132 78H0Z" fill="url(#hland)"/>
+
+    <!-- white village -->
+    <g>
+      <path d="M96 360v-38h52v38Z" fill="#F7EFE1"/>
+      <path d="M90 322 122 302l34 20Z" fill="#B2633F"/>
+      <path d="M164 366v-46h44v46Z" fill="#EFE5D3"/>
+      <path d="M158 320 186 302l30 18Z" fill="#9A5437"/>
+      <path d="M220 372v-32h38v32Z" fill="#F4EBDD"/>
+      <path d="M214 340 239 324l27 16Z" fill="#C4623C"/>
+      <g fill="#355044">
+        <rect x="108" y="332" width="10" height="14"/>
+        <rect x="126" y="332" width="10" height="14"/>
+        <rect x="176" y="334" width="9" height="13"/>
+        <rect x="192" y="334" width="9" height="13"/>
+        <rect x="230" y="348" width="8" height="11"/>
+        <rect x="242" y="348" width="8" height="11"/>
+      </g>
+    </g>
+
+    <!-- lighthouse -->
+    <g>
+      <path d="M318 366V268h36v98Z" fill="#F7EFE1"/>
+      <path d="M312 268h48v12h-48Z" fill="#C4623C"/>
+      <path d="M324 296h24v14h-24Z" fill="#B2633F"/>
+      <path d="M320 336h32v16h-32Z" fill="#B2633F"/>
+      <path d="M336 268v-20" stroke="#3B584A" stroke-width="3"/>
+      <circle cx="336" cy="242" r="9" fill="#D79A5C"/>
+      <path d="M336 242 430 210M336 242 250 216" stroke="#E9C48C" stroke-width="2" opacity=".5"/>
+    </g>
+
+    <!-- right headland -->
+    <path d="M1440 408c-92-64-190-88-292-70-66 12-120 42-176 92-34 30-62 50-94 66v24h562Z" fill="#C5AE8B"/>
+
+    <!-- foreground terraces -->
+    <path d="M0 520v-64c70-18 140-20 214-4 64 14 118 10 176-8 66-20 132-18 202 4 62 20 122 22 186 6 76-18 152-14 228 10 60 18 110 20 154 4v52Z" fill="#B49B76"/>
+    <path d="M0 486c90-22 180-24 270-6 90 18 180 20 270 2 90-18 180-16 270 4 90 20 180 20 270 2 60-12 120-12 180 0" stroke="#A78E68" stroke-width="3" fill="none" opacity=".6"/>
+    <path d="M0 508c120-18 240-18 360 0s240 18 360 0 240-18 360 0 240 18 360 0v12H0Z" fill="#A98F6A" opacity=".55"/>
+
+    <!-- trees -->
+    <g>
+      <path d="M460 462v-46" stroke="#6E5B40" stroke-width="5"/>
+      <path d="M460 430c-26-10-34-28-24-44 10 14 22 20 38 22-4 10-8 16-14 22Z" fill="#6D8568"/>
+      <path d="M460 430c24-16 42-14 52-2-16 10-32 14-46 16Z" fill="#7C9274"/>
+      <path d="M1040 470v-54" stroke="#6E5B40" stroke-width="5"/>
+      <path d="M1040 434c-30-12-38-32-28-50 12 16 26 22 42 24-4 12-8 18-14 26Z" fill="#6D8568"/>
+      <path d="M1040 434c28-18 50-16 60-2-18 12-36 18-52 20Z" fill="#7C9274"/>
+    </g>
+
+    <!-- birds -->
+    <path d="M700 128c9-9 17-9 26 0M740 112c8-8 15-8 22 0M780 134c7-7 13-7 20 0" stroke="#5B6F62" stroke-width="2" fill="none"/>
+  </g>
+</svg>

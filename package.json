@@ -1,0 +1,16 @@
+{
+  "name": "farol-property-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Farol — a listing-first comparable-value agent. Give it a property, and it finds similar competitor listings, deduplicates them and returns a fair-value report with evidence.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js",
+    "check": "node --disable-warning=ExperimentalWarning --check server/index.js"
+  }
+}

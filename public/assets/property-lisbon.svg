@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="lsky" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE5D2"/>
+      <stop offset="1" stop-color="#DED0B7"/>
+    </linearGradient>
+    <linearGradient id="lfacade" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F1E4"/>
+      <stop offset="1" stop-color="#E8DAC4"/>
+    </linearGradient>
+    <pattern id="lazulejo" width="26" height="26" patternUnits="userSpaceOnUse">
+      <rect width="26" height="26" fill="#EADDC8"/>
+      <path d="M13 3 23 13 13 23 3 13Z" fill="none" stroke="#93A997" stroke-width="1.2"/>
+      <circle cx="13" cy="13" r="2.3" fill="#C4623C"/>
+    </pattern>
+  </defs>
+  <g>
+    <rect width="640" height="400" fill="url(#lsky)"/>
+    <circle cx="510" cy="70" r="34" fill="#D79A5C" opacity=".8"/>
+
+    <!-- neighbouring facades -->
+    <path d="M0 400V150h118v250Z" fill="#E2D3BC"/>
+    <path d="M0 150h118v18H0Z" fill="#B2633F"/>
+    <path d="M118 400V190h58v210Z" fill="#D6C5AC"/>
+
+    <!-- main facade -->
+    <path d="M150 400V112h286v288Z" fill="url(#lfacade)"/>
+    <path d="M140 112h306v20H140Z" fill="#B2633F"/>
+    <path d="M140 112h306" stroke="#8F4A2E" stroke-width="3"/>
+    <path d="M166 132h254v268H166Z" fill="url(#lazulejo)"/>
+
+    <!-- windows -->
+    <g>
+      <rect x="186" y="166" width="64" height="86" fill="#355044"/>
+      <rect x="192" y="172" width="52" height="74" fill="#BFD3C6"/>
+      <path d="M218 172v74M192 209h52" stroke="#355044" stroke-width="2"/>
+      <path d="M180 166h76v6h-76Z" fill="#C4623C"/>
+      <path d="M184 252h68v12h-68Z" fill="#B2633F"/>
+      <path d="M190 264v10M206 264v10M222 264v10M238 264v10M250 264v10" stroke="#8F4A2E" stroke-width="2"/>
+
+      <rect x="306" y="166" width="64" height="86" fill="#355044"/>
+      <rect x="312" y="172" width="52" height="74" fill="#BFD3C6"/>
+      <path d="M338 172v74M312 209h52" stroke="#355044" stroke-width="2"/>
+      <path d="M300 166h76v6h-76Z" fill="#C4623C"/>
+      <path d="M304 252h68v12h-68Z" fill="#B2633F"/>
+      <path d="M310 264v10M326 264v10M342 264v10M358 264v10M370 264v10" stroke="#8F4A2E" stroke-width="2"/>
+
+      <rect x="186" y="302" width="64" height="70" fill="#355044"/>
+      <rect x="192" y="308" width="52" height="58" fill="#BFD3C6"/>
+      <path d="M218 308v58M192 337h52" stroke="#355044" stroke-width="2"/>
+      <path d="M180 302h76v6h-76Z" fill="#C4623C"/>
+
+      <rect x="306" y="302" width="64" height="70" fill="#355044"/>
+      <rect x="312" y="308" width="52" height="58" fill="#BFD3C6"/>
+      <path d="M338 308v58M312 337h52" stroke="#355044" stroke-width="2"/>
+      <path d="M300 302h76v6h-76Z" fill="#C4623C"/>
+    </g>
+
+    <!-- door -->
+    <rect x="256" y="300" width="40" height="100" fill="#3F5A4C"/>
+    <path d="M256 316h40M276 300v100" stroke="#2F493D" stroke-width="2"/>
+    <path d="M252 296h48v8h-48Z" fill="#C4623C"/>
+
+    <!-- balconies -->
+    <g>
+      <path d="M174 262h88v6h-88Z" fill="#8C6B4A"/>
+      <path d="M176 268v14M198 268v14M220 268v14M242 268v14M260 268v14" stroke="#8C6B4A" stroke-width="2"/>
+      <path d="M294 262h88v6h-88Z" fill="#8C6B4A"/>
+      <path d="M296 268v14M318 268v14M340 268v14M362 268v14M380 268v14" stroke="#8C6B4A" stroke-width="2"/>
+    </g>
+
+    <!-- right building -->
+    <path d="M436 400V168h204v232Z" fill="#EADCC7"/>
+    <path d="M428 168h220v18H428Z" fill="#9A5437"/>
+    <g>
+      <rect x="464" y="206" width="54" height="66" fill="#355044"/>
+      <rect x="469" y="211" width="44" height="56" fill="#C4D5C9"/>
+      <path d="M491 211v56M469 239h44" stroke="#355044" stroke-width="1.8"/>
+      <path d="M458 206h66v6h-66Z" fill="#C4623C"/>
+
+      <rect x="546" y="206" width="54" height="66" fill="#355044"/>
+      <rect x="551" y="211" width="44" height="56" fill="#C4D5C9"/>
+      <path d="M573 211v56M551 239h44" stroke="#355044" stroke-width="1.8"/>
+      <path d="M540 206h66v6h-66Z" fill="#C4623C"/>
+
+      <rect x="464" y="306" width="54" height="70" fill="#355044"/>
+      <rect x="469" y="311" width="44" height="60" fill="#C4D5C9"/>
+      <path d="M491 311v60M469 341h44" stroke="#355044" stroke-width="1.8"/>
+      <path d="M458 306h66v6h-66Z" fill="#C4623C"/>
+
+      <rect x="546" y="306" width="54" height="70" fill="#355044"/>
+      <rect x="551" y="311" width="44" height="60" fill="#C4D5C9"/>
+      <path d="M573 311v60M551 341h44" stroke="#355044" stroke-width="1.8"/>
+      <path d="M540 306h66v6h-66Z" fill="#C4623C"/>
+    </g>
+
+    <!-- street -->
+    <path d="M0 386h640v14H0Z" fill="#CDBB9D"/>
+    <path d="M0 386h640" stroke="#B5A184" stroke-width="2"/>
+    <path d="M96 386v-52M96 334h22l-22 18" stroke="#3B584A" stroke-width="3" fill="none"/>
+    <path d="M96 386v-52M576 386v-52M576 334h-22l22 18" stroke="#3B584A" stroke-width="3" fill="none"/>
+
+    <!-- foreground plant -->
+    <path d="M592 400v-34c0-10 7-16 16-16s16 6 16 16v34Z" fill="#B2633F"/>
+    <path d="M608 356c-16-10-18-24-10-34 4 10 12 16 22 18-4 8-8 12-12 16Z" fill="#4C6B59"/>
+  </g>
+</svg>

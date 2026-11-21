@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE6D4"/>
+      <stop offset="1" stop-color="#DDCFB7"/>
+    </linearGradient>
+    <linearGradient id="tstreet" x1="0" y1="360" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBB99B"/>
+      <stop offset="1" stop-color="#C1AD8D"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="640" height="400" fill="url(#tsky)"/>
+    <circle cx="540" cy="82" r="38" fill="#D79A5C" opacity=".85"/>
+    <circle cx="540" cy="82" r="54" fill="none" stroke="#D79A5C" stroke-opacity=".24"/>
+
+    <!-- distant rooftops -->
+    <path d="M0 196 44 176l44 20v40H0Z" fill="#D6C5A9"/>
+    <path d="M548 188l46-20 46 20v48h-92Z" fill="#D6C5A9"/>
+
+    <!-- house 1 -->
+    <g>
+      <path d="M64 360V192h136v168Z" fill="#F4EBDD"/>
+      <path d="M56 192 128 148l80 44Z" fill="#B2633F"/>
+      <path d="M56 192h152" stroke="#8F4A2E" stroke-width="3"/>
+      <path d="M128 148v-14" stroke="#2F493D" stroke-width="2"/>
+      <path d="M118 134h20" stroke="#2F493D" stroke-width="2"/>
+
+      <rect x="86" y="214" width="40" height="48" fill="#355044"/>
+      <rect x="91" y="219" width="30" height="38" fill="#B7CFC1"/>
+      <path d="M106 219v38M91 238h30" stroke="#355044" stroke-width="1.8"/>
+      <rect x="150" y="214" width="40" height="48" fill="#355044"/>
+      <rect x="155" y="219" width="30" height="38" fill="#B7CFC1"/>
+      <path d="M170 219v38M155 238h30" stroke="#355044" stroke-width="1.8"/>
+
+      <rect x="104" y="296" width="46" height="64" fill="#3F5A4C"/>
+      <path d="M104 310h46M127 296v64" stroke="#2F493D" stroke-width="1.6"/>
+      <circle cx="144" cy="330" r="2.3" fill="#EADBC4"/>
+
+      <path d="M76 288h54v8H76Z" fill="#C4623C"/>
+      <path d="M160 288h38v8h-38Z" fill="#C4623C"/>
+      <path d="M80 296v10M96 296v10M112 296v10M124 296v10M166 296v10M182 296v10M194 296v10" stroke="#A95132" stroke-width="1.4"/>
+
+      <path d="M72 360h120" stroke="#2F493D" stroke-width="2"/>
+      <path d="M72 360v-14h120v14" fill="#CBB99B"/>
+    </g>
+
+    <!-- house 2 -->
+    <g>
+      <path d="M200 360V178h136v182Z" fill="#E8DCC8"/>
+      <path d="M192 178 268 136l84 42Z" fill="#9A5437"/>
+      <path d="M192 178h160" stroke="#78402A" stroke-width="3"/>
+
+      <path d="M216 338c0-26 10-40 32-40s32 14 32 40Z" fill="#6F8C78"/>
+      <path d="M248 298v40" stroke="#4C6B59" stroke-width="1.4"/>
+      <rect x="264" y="212" width="52" height="54" fill="#355044"/>
+      <rect x="270" y="218" width="40" height="42" fill="#C2D5C8"/>
+      <path d="M290 218v42M270 239h40" stroke="#355044" stroke-width="1.8"/>
+      <path d="M256 210h68" stroke="#3B584A" stroke-width="3"/>
+
+      <rect x="302" y="294" width="8" height="66" fill="#8C4B30"/>
+      <path d="M306 302h18" stroke="#3B584A" stroke-width="2"/>
+      <path d="M324 306c0 8-7 14-15 14s-15-6-15-14Z" fill="#D79A5C"/>
+      <circle cx="300" cy="316" r="5" fill="#F4ECDD"/>
+
+      <g stroke="#B5A184" stroke-width="1.2">
+        <path d="M208 212h10M208 228h10M208 244h10M208 260h10"/>
+      </g>
+
+      <rect x="256" y="176" width="26" height="16" fill="#3B584A"/>
+      <path d="M256 180h26" stroke="#2F493D" stroke-width="1.4"/>
+    </g>
+
+    <!-- house 3 -->
+    <g>
+      <path d="M344 360V204h132v156Z" fill="#F1E8D7"/>
+      <path d="M336 204 410 158l74 46Z" fill="#B2633F"/>
+      <path d="M336 204h148" stroke="#8F4A2E" stroke-width="3"/>
+
+      <rect x="368" y="222" width="38" height="44" fill="#355044"/>
+      <rect x="373" y="227" width="28" height="34" fill="#B7CFC1"/>
+      <path d="M387 227v34M373 244h28" stroke="#355044" stroke-width="1.7"/>
+      <rect x="420" y="222" width="38" height="44" fill="#355044"/>
+      <rect x="425" y="227" width="28" height="34" fill="#B7CFC1"/>
+      <path d="M439 227v34M425 244h28" stroke="#355044" stroke-width="1.7"/>
+
+      <rect x="390" y="296" width="42" height="64" fill="#B2633F"/>
+      <path d="M390 308h42M411 296v64" stroke="#8F4A2E" stroke-width="1.5"/>
+      <circle cx="424" cy="330" r="2.2" fill="#F4ECDD"/>
+
+      <path d="M358 284h34v6h-34Z" fill="#B2633F"/>
+      <path d="M366 284c-2-16 2-26 12-32 8 8 10 20 8 32Z" fill="#587765"/>
+      <path d="M376 252c-8-6-8-14-2-20 2 8 6 12 14 14-4 4-8 6-12 6Z" fill="#4C6B59"/>
+
+      <path d="M348 360h124" stroke="#2F493D" stroke-width="2"/>
+      <path d="M354 360v-10h112v10" fill="#CBB99B"/>
+    </g>
+
+    <!-- pavement / street -->
+    <path d="M0 360h640v40H0Z" fill="url(#tstreet)"/>
+    <g stroke="#AF9B7D" stroke-width="1.2">
+      <path d="M24 368h72M112 368h54M180 368h88M282 368h66M362 368h94M470 368h88M572 368h54"/>
+      <path d="M0 384h640"/>
+    </g>
+    <path d="M28 360h64l-6-10H34Z" fill="#B7A487"/>
+    <path d="M348 360h112l-8-10h-96Z" fill="#B7A487"/>
+
+    <!-- flowers -->
+    <g fill="#A95132">
+      <circle cx="330" cy="330" r="5"/><circle cx="322" cy="322" r="4"/><circle cx="338" cy="320" r="4"/>
+      <circle cx="330" cy="312" r="3.2"/>
+    </g>
+    <path d="M330 334c-2-14 0-22 4-28M326 330c-6-8-8-14-8-20" stroke="#4C6B59" stroke-width="1.6" fill="none"/>
+
+    <!-- birds -->
+    <path d="M468 96c7-7 13-7 20 0M494 86c6-6 11-6 17 0" stroke="#5B6F62" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>
